@@ -10,7 +10,7 @@ songs = ['music//finnies.mp3', 'music//iwannabeyours.mp3', 'music//wakeupinthesk
 pygame.mixer.music.load(songs[i])
 
 def music_play():
-    pygame.mixer.music.play()
+    pygame.mixer.music.play()   
 def next_song():
     global i
     i += 1
