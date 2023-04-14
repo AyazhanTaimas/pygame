@@ -52,7 +52,7 @@ def game_loop():
             message("GAME OVER!", white)
             pygame.display.update()
             for event in pygame.event.get():
-                if event.type == pygame.QUIT():
+                if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
                     
