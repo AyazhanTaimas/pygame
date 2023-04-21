@@ -121,7 +121,7 @@ while True:
         
     if pygame.sprite.spritecollideany(P1, enemies): #столкновение Р1 и Е
         pygame.image.load("images//GameOver.jpg")
-        #screen.fill(white)
+        screen.fill(red)
         pygame.mixer.Sound('mp3//crash.wav').play()
         time.sleep(0.5)
         

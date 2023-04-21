@@ -93,7 +93,7 @@ class Bonus(pygame.sprite.Sprite):
         self.ayou = 0
         
     def move(self):
-        self.rect.move_ip(0, 7)
+        self.rect.move_ip(0, 5)
         if self.rect.bottom > 600:
             self.rect.top = 0
             self.image = pygame.image.load("images//metal.png")
@@ -179,8 +179,8 @@ while True:
     
     if show_bonus:
         bonuss = font_small.render("+3$", True, red)
-        screen.blit(bonuss, (130, 20))
-        if pygame.time.get_ticks() - bonus_timer >=1000:
+        screen.blit(bonuss, (130, 50))
+        if pygame.time.get_ticks() - bonus_timer >=20000:
             show_bonus = False
         
        

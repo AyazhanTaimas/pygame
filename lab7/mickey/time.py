@@ -31,7 +31,7 @@ while True:
     screen.blit(mickey,(0, 0))
     time = datetime.datetime.now()
     minute = time.minute
-    second = time.second   
+    second = time.second    
 
     blitRotateCenter(screen, left_hand, (340, 150), second* -6)
     blitRotateCenter(screen, right_hand, (320, 215), minute* -6)
